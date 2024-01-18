@@ -1,4 +1,4 @@
-import * as iq from "/iq.js";
+import * as iq from "../../iq.js";
 
 function CompareISODates(d1, d2) {
     return new Date(d1).getTime() - new Date(d2).getTime();
