@@ -40,3 +40,7 @@ query.extend()
 
 For real, this was a cool idea that came to mind, it's not supposed to be fast and/or efficient.
 Though it makes for some cool readable code.
+
+## Examples
+
+Examples can be tried within this repo's [GitHub Pages Website](https://Marco4413.github.io/iq.js).
