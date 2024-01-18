@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": [ "ES6" ],
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "noEmit": true
+  },
+  "files": [ "iq.js" ]
+}

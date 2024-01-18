@@ -1,0 +1,36 @@
+{
+  "name": "iq.js",
+  "version": "1.0.0",
+  "description": "An Iterable Querying library.",
+  "type": "module",
+  "main": "iq.js",
+  "types": "iq.d.ts",
+  "files": [
+    "iq.js",
+    "iq.d.ts"
+  ],
+  "scripts": {
+    "prepare": "tsc --noEmit false --emitDeclarationOnly",
+    "tsc-watch": "tsc --watch",
+    "prelint": "tsc",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marco4413/iq.js.git"
+  },
+  "keywords": [
+    "query"
+  ],
+  "author": "Marco4413",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marco4413/iq.js/issues"
+  },
+  "homepage": "https://github.com/Marco4413/iq.js#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  }
+}

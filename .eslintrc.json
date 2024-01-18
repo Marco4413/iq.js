@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "env": { "browser": true, "es6": true },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-tabs": "error",
+    "no-constant-condition": [
+      "error",
+      { "checkLoops": false }
+    ],
+    "indent": [
+      "error",
+      4
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": [
+      "error",
+      "always",
+      { "omitLastInOneLineBlock": false }
+    ]
+  }
+}
