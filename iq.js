@@ -149,7 +149,12 @@ export function BuildMapRule(fn) {
     };
 }
 
+/** @implements {Iterable<any>} */
 export class QueryExecutor {
+    /**
+     * @param {QueryRule} query Usually a compiled {@link QueryRule} from {@link Query.compile}.
+     * @param {Iterable<any>?} [iterable]
+     */
     constructor(query, iterable=null) {
         /** @type {QueryRule} Holds the compiled query to run. */
         this.query = query;
