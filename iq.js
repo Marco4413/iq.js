@@ -188,6 +188,21 @@ export class QueryExecutor {
     collect() { return Array.from(this); }
 
     /**
+     * Calls `fn` for each value of `this` and returns all values as a Promise.
+     * This function can also be used as an async iforeach.
+     * If `fn` is not provided then it's the identity function.
+     * @param {(value: any, i: number) => Promise<any>|any} [fn] An async function which should fulfill when the query value is ready.
+     * @returns {Promise<any[]>}
+     */
+    acollect(fn=(x=>x)) {
+        let i = 0;
+        const promises = [];
+        for (const val of this)
+            promises.push(fn(val, i++));
+        return Promise.all(promises);
+    }
+
+    /**
      * Sets `this.iterable` and returns `this`.
      * @param {Iterable<any>} iterable
      * @returns {QueryExecutor} `this`
